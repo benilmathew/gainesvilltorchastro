@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+import HomeContent from '../components/HomeContent.astro';
+import HomePage from '../content/pages/home.md';
+---
+
+<Layout title="Gainesville Torch | Christian Non-Profit">
+  {HomePage ? <HomePage /> : <HomeContent />}
+</Layout>

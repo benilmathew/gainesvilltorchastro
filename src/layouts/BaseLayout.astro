@@ -1,0 +1,33 @@
+---
+const { title = 'Astro Site' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark">
+    <title>{title}</title>
+    <!-- External favicon and fonts (kept from legacy site) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://kairosprisonministry.org/wp-content/uploads/2023/05/cropped-Kairos-Favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Global stylesheet from public/ -->
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>© {new Date().getFullYear()} Gainesville Torch</p>
+    </footer>
+    <!-- Global JS from public/ (deferred) -->
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>

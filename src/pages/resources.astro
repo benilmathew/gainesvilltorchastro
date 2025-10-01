@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/BaseLayout.astro';
+---
+
+<Layout title="Resources | Gainesville Torch">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>Resources</span>
+    </nav>
+
+    <section class="section">
+      <h2>Resources</h2>
+      <div class="hero-ctas" style="margin-bottom: 8px;">
+        <a class="btn btn-ghost" href="/">Back to Home</a>
+      </div>
+      <p>Learn more about Gainesville Torch and share with friends.</p>
+      <div class="download-grid">
+        <a class="download card reveal" href="/assets/sample.pdf" download>
+          <div class="icon" aria-hidden="true">📄</div>
+          <div class="meta">
+            <strong>Annual Report</strong>
+            <span>Program highlights &amp; impact</span>
+          </div>
+        </a>
+        <a class="download card reveal" href="/assets/sample.txt" download>
+          <div class="icon" aria-hidden="true">📄</div>
+          <div class="meta">
+            <strong>Info Sheet</strong>
+            <span>Overview &amp; contact</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>
